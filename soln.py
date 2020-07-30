@@ -3,5 +3,5 @@ b = []
 for i in range(2):
     x = max(a)
     b.append(a.pop(a.index(x)))
-sum = b[0]*b[1]
+sum = b[0] * b[1]
 print(sum)

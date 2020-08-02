@@ -22,7 +22,7 @@ int main() {
 
 int main(){
 	int num;
-	scanf("%d", &num);    
+	scanf("%d", &num);
 	if(num< 0)
 		{
 			num=-num;
@@ -64,7 +64,7 @@ d = (b**2) - (4*a*c)
 # find two solutions
 sol1 = (-b-math.sqrt(d))/(2*a)
 sol2 = (-b+math.sqrt(d))/(2*a)
-    
+
 print(int(sol2))
 print(int(sol1))
 
@@ -78,12 +78,12 @@ int main(){
 	int num,i,f=1;
 	if(num>0)
 	{
-		scanf("%d", &num);              		
-		for(i=1;i<=num;i++)    
+		scanf("%d", &num);
+		for(i=1;i<=num;i++)
 		{
 			f*=i;
-		} 
-		printf("%d",f); 
+		}
+		printf("%d",f);
 	}
 	else
 		printf("%d",1);
@@ -99,17 +99,17 @@ int main(){
 #include <stdio.h>
 
 int main(){
-	
+
 
 	int num,i,f=1,a,b=0;
-	
-		scanf("%d", &num);  
+
+		scanf("%d", &num);
 	if(num>0)
 	{            			// Reading input from STDIN
-		for(i=1;i<=num;i++)    
+		for(i=1;i<=num;i++)
 		{
 			f*=i;
-		} 
+		}
         while(f!=0)
         {
             f= f/10;
@@ -134,28 +134,11 @@ int main(){
 int main()
 {
 	int a,r,n,t,p;
-	scanf("%d", &a);   
-	scanf("%d", &r); 
-	scanf("%d", &n); 
+	scanf("%d", &a);
+	scanf("%d", &r);
+	scanf("%d", &n);
 	p =pow(r,n-1);
-	         
+
 	t= a*p;
 	printf("%d",t);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

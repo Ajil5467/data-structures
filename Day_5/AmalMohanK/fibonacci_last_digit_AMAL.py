@@ -30,7 +30,7 @@ def get_fibonacci_last_digit_naive(n):
     return current % 10
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     n = int(input())
     # print(get_fibonacci_last_digit_naive(n))

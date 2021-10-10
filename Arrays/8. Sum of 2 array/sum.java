@@ -37,40 +37,30 @@ class SumOfArrays{
         scan.close();
     }
 
-    public int[] ArraysSum(){
-       
-        int[] resultArray = new int[Math.max(n, m)];
+       public static Scanner scn = new Scanner(System.in);
 
-        int i = 0;
-
-        while(i<n && i < m){
-            resultArray[i] = array1[i] + array2[i];
-            i++;
+    public static void maxElement(int[] arr){
+        int maxEle = -(int)1e9;
+        for(int ele : arr){
+             maxEle = Math.max(maxEle, ele);
         }
+          System.out.println(maxEle);
 
-        while(i < n){
-            resultArray[i] = array1[i];
-            i++;
+    }
+    private static int[] input(int n) {
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++){
+            arr[i] = scn.nextInt();
         }
+        return arr;        
+    }
 
-        while(i < m){
-            resultArray[i] = array2[i];
-            i++;
-        }
-
-        return resultArray;
+    public static void main(String[] args) {
+        int n = scn.nextInt();
+        int[] arr = input(n);
+        maxElement(arr);
+        
     
-    }
-
-    public void printArray(int[] resultArray){
-        for(int i = 0;i<resultArray.length;i++){
-            System.out.print(resultArray[i] + " ");
-        }
-
-        System.out.println("");
-    }
-}
-
 public class sum {
     public static void main(String[] args) {
         SumOfArrays sum = new SumOfArrays();
